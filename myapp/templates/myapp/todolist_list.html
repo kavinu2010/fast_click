@@ -1,0 +1,14 @@
+<h1>Welcome to the Todo Django page</h1>
+
+<a href="{% url 'create' %}">Add Task</a>
+<br />
+{% for list in tdlist %}
+<table>
+  <tr>
+    {{list.title}}
+  </tr>
+</table>
+
+{% empty %}
+<h3>No items in a list</h3>
+{% endfor%}

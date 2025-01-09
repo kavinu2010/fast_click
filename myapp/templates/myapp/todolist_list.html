@@ -7,6 +7,8 @@
   <tr>
     {{list.title}}
   </tr>
+  <td><a href="{% url 'list' list.id %}">View</a></td>
+  <td><a href="{% url 'list-update' list.id %}">Update</a></td>
 </table>
 
 {% empty %}

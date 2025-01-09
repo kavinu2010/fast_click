@@ -1,7 +1,8 @@
-<h3>Task Form</h3>
-<a href="{% url 'tdlist' %}">Goback</a>
+<h3>My task list</h3>
+
+<a href="{% url 'tdlist'}">Goback</a>
 
 <form action="" method="POST">
-  {% csrf_token %} {{form.as_p}}
+  {%csrf_token%} {{ form.as_p}}
   <input type="submit" value="submit" />
 </form>

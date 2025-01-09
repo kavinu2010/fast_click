@@ -1,6 +1,6 @@
 <h3>My task list</h3>
 
-<a href="{% url 'tdlist'}">Goback</a>
+<a href="{% url 'tdlist' %}">Goback</a>
 
 <form action="" method="POST">
   {%csrf_token%} {{ form.as_p}}

@@ -1,0 +1,7 @@
+<a href="{% url 'tdlist' %}">Goback</a>
+
+<form action="" method="POST">
+  {%csrf_token%}
+  <p>are you do you want to delete >> {{list}}</p>
+  <button type="submit">Delete</button>
+</form>
